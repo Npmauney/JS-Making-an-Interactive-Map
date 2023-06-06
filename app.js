@@ -73,12 +73,12 @@ async function getCoords() {
 	const pos = await new Promise((resolve, reject) => {
 		navigator.geolocation.getCurrentPosition(resolve, reject)
 	});
-	console.log(pos.coords.latitude)
+	/*console.log(pos.coords.latitude)
 	let tempLat = 37.779379
 	let tempLong = -122.418433
-
+*/
 	// use this code to use SF as the address
-	return [tempLat, tempLong]
+	return [pos.coords.latitude, pos.coords.longitude]
 
 	// Use this code to use your address
 	// return [pos.coords.latitude, pos.coords.longitude]
