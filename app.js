@@ -27,7 +27,7 @@ const myMap = {
 
 	// add business markers
 	addMarkers() {
-		for (var i = 0; i < this.businesses.length; i++) {
+		for (let i = 0; i < this.businesses.length; i++) {
 		this.markers = L.marker([
 			this.businesses[i].lat,
 			this.businesses[i].long,
